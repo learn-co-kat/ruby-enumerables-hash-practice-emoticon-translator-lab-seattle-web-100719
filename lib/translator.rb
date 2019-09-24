@@ -26,5 +26,12 @@ def get_japanese_emoticon(path, emoticon)
 end
 
 def get_english_meaning
-  # code goes here
+  sorted_hash = load_library(pathx)
+  get_emo = sorted_hash['get_meaning']
+
+  if get_emo.has_key?("#{emoticon}")
+    return get_emo["#{emoticon}"]
+  else
+    return 'Sorry, that emoticon was not found'
+  end
 end
