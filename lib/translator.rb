@@ -16,13 +16,6 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   sorted_emo = load_library(path)
-  # y = sorted_emo[:new_hash][:get_emoticon]
-  
-      if y.has_key?("#{emoticon}")
-        return y[:"#{emoticon}"]
-      else
-      return 'Sorry, that emoticon was not found'
-  end
 
 end
 
